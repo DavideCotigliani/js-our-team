@@ -40,23 +40,20 @@ const teamMembers = [
 //funzione per creare la singola card del membro del team
 const createMemberCard = (member) => {
   const card = `<div class="col-12 col-md-6 col-lg-4">
-                    <div class="team-card">
+                    <div class="team-card d-flex my-4">
                           <div class="card-image">
-                          <img src="./img/${member.img}" alt="" class="img-fluid">
+                          <img src="./${member.img}" alt="Immagine di ${member.name}" class="img-fluid">
                           </div>
-                        <div class="card-text my-5">
+                        <div class="card-text my-5 ms-3">
                             <h4>${member.name}</h4>
                             <p>${member.role}</p>
-                            <a href="marcobianchi@team.com">${member.email}</a>
+                            <a href="mailto:${member.email}">${member.email}</a>
                         </div>
                     </div>
                 </div>`;
                return card;
 }
-// ciclo gli elementi dell'array di oggetti
-for(let i= 0;i<teamMembers.length; i++){
-  createMemberCard(teamMembers[i]);
-}
+
 // funzione per renderizzare il contenuto dell'array
 const renderTeam = () => {
 // variabile con stringa vuota che conterrà le colonne da mostrare concatenandole come stringhe
