@@ -75,3 +75,23 @@ const role = document.getElementById('role')
 const image = document.getElementById('immagine')
 const button = document.getElementById('send')
 const membersList = document.getElementById('team-members')
+
+// creo l'addEventListener
+button.addEventListener('click', (e)=> {
+  e.preventDefault();
+
+const nomeInput= name.value;
+const roleInput= role.value;
+const imageInput = image.value;
+
+if(!name || !role || !image){
+  alert('Devi inserire tutti i campi')
+  return;
+}
+// creo l'oggetto da inserire nell'array
+const newMember = {
+  name:nomeInput,
+  role: roleInput,
+  image: imageInput,
+}
+})
