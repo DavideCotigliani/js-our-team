@@ -38,3 +38,24 @@ const teamMembers = [
 ];
 
 //funzione per creare la singola card del membro del team
+const createMemberCard = (member) => {
+  const card = `<div class="col-12 col-md-6 col-lg-4">
+                    <div class="team-card">
+                          <div class="card-image">
+                          <img src="./img/male1.png" alt="" class="img-fluid">
+                          </div>
+                        <div class="card-text">
+                            <h4>Marco Bianchi</h4>
+                            <p>Designer</p>
+                            <a href="marcobianchi@team.com">marcobianchi@team.com</a>
+                        </div>
+                    </div>
+                </div>`;
+               //recupero l'id della riga che mi serve e concateno l'elemento card
+               document.getElementById('team-members').innerHTML +=card;
+}
+// ciclo gli elementi dell'array di oggetti
+for(let i= 0;i<teamMembers.length; i++){
+  createMemberCard(teamMembers[i]);
+}
+
