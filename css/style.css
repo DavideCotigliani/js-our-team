@@ -1,0 +1,11 @@
+h2{
+    color: violet;
+}
+.team-card{
+    background-color: black;
+    color: white;
+}
+.card-text{
+    padding: 10px 0px;
+    text-align: center;
+ }
