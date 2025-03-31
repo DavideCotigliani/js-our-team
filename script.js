@@ -68,3 +68,10 @@ document.getElementById('team-members').innerHTML = cards;
 }
 // chiamata della funzione renderTeam
 renderTeam();
+
+// recupero gli elementi del dom della form
+const name = document.getElementById('name')
+const role = document.getElementById('role')
+const image = document.getElementById('immagine')
+const button = document.getElementById('send')
+const membersList = document.getElementById('team-members')

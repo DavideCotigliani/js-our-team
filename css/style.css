@@ -9,3 +9,25 @@ h2{
     text-align: center;
     margin-bottom: 10px;
  }
+
+ .form-cointainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+ }
+ form{
+    width: 300px;
+ }
+ form div{
+    margin-bottom: 20px;
+ }
+ .my-button{
+    background-color: lightblue;
+    border: 1px solid black;
+    width: 100px;
+    padding: 5px;
+    transition: 0.3;
+ }
+ .my-button{
+    background-color: transparent;
+ }
