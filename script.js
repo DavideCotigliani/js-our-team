@@ -94,4 +94,12 @@ const newMember = {
   role: roleInput,
   image: imageInput,
 }
+
+teamMembers.push(newMember);
+
+name.value = '';
+role.value = '';
+image.value = '';
+renderTeam(teamMembers)
+
 })
